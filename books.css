@@ -1,0 +1,233 @@
+body {
+  background-color: #e8e4e4;
+  font-family: Lato, Helvetica, sans-serif;
+  margin: 0;
+}
+li {
+  display: block;
+}
+
+/*style dla okna modalnego*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 25px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modalContent {
+  margin: 0 auto;
+  display: table;
+}
+.modalImg {
+  width: 100%;
+  height: 100%;
+  cursor: auto;
+}
+.close {
+  color: black;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  left: 50px;
+}
+.far:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/*style dla header*/
+.header {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px dashed #c3c2c2;
+}
+em {
+  padding-left: 15px;
+  padding-top: 15px;
+  background-color: #ffce6e;
+  font-style: normal;
+}
+
+/*style dla aside*/
+aside {
+  padding: 30px;
+}
+.sort {
+  border-bottom: 1px solid #918f8f;
+  margin-bottom: 5%;
+}
+.filter {
+  border-bottom: 1px solid #918f8f;
+  margin-bottom: 5%;
+}
+.input {
+  height: 30px;
+  width: 50px;
+}
+.button {
+  text-align: center;
+}
+.clear {
+  padding: 15px;
+  background-color: #918f8f;
+  color: white;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 0px;
+  font-weight: bold;
+}
+
+/*style dla main*/
+main {
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.listItem {
+  text-align: center;
+  float: left;
+}
+ul {
+  padding: 0;
+}
+.number {
+  text-align: left;
+  font-size: 50px;
+  color: #c3c2c2;
+  font-weight: bold;
+  margin: 0;
+}
+img {
+  cursor: pointer;
+}
+.title {
+  font-size: 18px;
+}
+.line {
+  width: 20%;
+  height: 3px;
+  background: #f74848;
+  border: 0px;
+}
+.author {
+  font-style: italic;
+  color: #787373;
+  font-size: 17px;
+}
+span {
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+  color: #918f8f;
+  line-height: 150%;
+}
+.datePagesLink {
+  font-size: 15px;
+}
+.link {
+  text-decoration: none;
+  color: #f74848;
+  border-bottom: 2px dashed #f74848;
+}
+.empty {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* style dla okna do550px */
+@media (max-width: 550px) {
+  .number {
+    float: left;
+    text-align: center;
+    width: 20%;
+  }
+  img {
+    width: 80%;
+    float: right;
+  }
+  .listItem {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+  .bookDate {
+    width: 49.999%;
+    float: left;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .image {
+    width: 49.999%;
+    float: left;
+  }
+}
+/*style dla okna 551-760px*/
+@media (min-width: 551px) and (max-width: 760px) {
+  .listItem {
+    width: 44.999%;
+    padding: 2.5%;
+    height: 480px;
+  }
+}
+
+/* style dla okna 761-1024px */
+@media (min-width: 761px) and (max-width: 1024px) {
+  aside {
+    width: 23%;
+    float: left;
+    height: 100vh;
+  }
+  main {
+    width: 67%;
+    float: left;
+  }
+  .listItem {
+    width: 44.999%;
+    padding: 2.5%;
+    height: 480px;
+  }
+}
+/* style dla okna 1025-1680px */
+@media (min-width: 1025px) and (max-width: 1680px) {
+  aside {
+    width: 235px;
+    float: left;
+    height: 100vh;
+  }
+  main {
+    width: 70%;
+    float: left;
+  }
+  .listItem {
+    width: 28%;
+    padding: 2.5%;
+    height: 480px;
+  }
+}
+/* style dla okna powyżej 1680px */
+@media (min-width: 1681px) {
+  aside {
+    width: 235px;
+    float: left;
+    height: 100vh;
+  }
+  main {
+    width: 1400px;
+  }
+  .listItem {
+    width: 20%;
+    padding: 2.5%;
+    height: 480px;
+  }
+}

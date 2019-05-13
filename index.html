@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="books.css" />
+    <script type="text/javascript" src="books.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Książki o Javascript</title>
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modalContent">
+        <span class="close" id="close"
+          ><i class="far fa-times-circle"></i>
+        </span>
+        <img class="modalImg" id="modalImg" src="" />
+      </div>
+    </div>
+
+    <h1 class="header"><em>JS</em>’owe książki</h1>
+    <aside>
+      <div class="sort">
+        <h2>Sortuj po</h2>
+        <ul>
+          <li><input name="sort" type="radio" value="pages" /> ilości stron</li>
+          <li><input name="sort" type="radio" value="date" /> dacie wydania</li>
+          <li>
+            <input name="sort" type="radio" value="author" /> nazwisku autora
+          </li>
+        </ul>
+      </div>
+      <div class="filter">
+        <h2>Pokaż tylko</h2>
+        <ul>
+          <li>
+            Powyżej <input type="number" class="input" id="input" /> stron
+          </li>
+        </ul>
+      </div>
+      <div class="button">
+        <button class="clear" id="clear">Wyczyść</button>
+      </div>
+    </aside>
+    <main>
+      <ul id="bookList"></ul>
+    </main>
+  </body>
+</html>
